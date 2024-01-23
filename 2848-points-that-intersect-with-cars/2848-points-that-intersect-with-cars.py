@@ -3,7 +3,5 @@ class Solution:
         l=[]
         for i in nums:
             x=list(range(i[0],i[1]+1))
-            print(x)
             l=l+x
-        print(l)
         return len(set(l))
