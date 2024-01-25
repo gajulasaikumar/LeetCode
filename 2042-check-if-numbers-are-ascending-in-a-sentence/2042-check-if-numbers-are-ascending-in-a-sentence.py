@@ -11,7 +11,5 @@ class Solution:
                     s1=""
         if s1.isdigit():
             l.append(int(s1))
-        print(l)
-        print(sorted(list(set(l))))
         return sorted(list(set(l)))==l
             
