@@ -1,7 +1,5 @@
 class Solution:
     def dividePlayers(self, skill: List[int]) -> int:
-        # if len(skill)<=2:
-        #     return skill[0]*skill[1]
         skill.sort()
         h=len(skill)-1
         l=0
