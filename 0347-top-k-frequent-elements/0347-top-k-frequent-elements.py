@@ -6,12 +6,7 @@ class Solution:
                 d[i]=1
             else:
                 d[i]+=1
-        l=[]
         x=dict(sorted(d.items(), key=lambda x: x[1], reverse=True))
-        print(x)
-        # s=sorted(d.values())
-        # s.sort(key=lambda x: x[1], reverse=True)
-        # print(s)
-        x=list(x.keys())
-        return x[:k]
+        p=list(x.keys())
+        return p[:k]
     
