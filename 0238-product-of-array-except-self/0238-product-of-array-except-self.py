@@ -5,6 +5,7 @@ class Solution:
         for i in range(len(nums)):
             l.append(p)
             p*=nums[i]
+        print(l)
         p1=1
         r=[]
         for i in range(len(nums)-1,-1,-1):
