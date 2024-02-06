@@ -6,5 +6,4 @@ class Solution:
             if dif in d:
                 return  [d[dif]+1,i+1]
             d[numbers[i]]=i
-        print(d)
         
