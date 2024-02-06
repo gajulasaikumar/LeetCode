@@ -5,7 +5,6 @@ class Solution:
             if i.isalnum():
                 s1+=i.lower()
         s=s1
-        print(s)
         i=0
         j=len(s)-1
         while j>i:
