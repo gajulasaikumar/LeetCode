@@ -14,5 +14,5 @@ class Solution:
                     j=j-1
                 else:
                     l.add((k,nums[i],nums[j]))
-                    i=i+1
+                    j=j-1
         return l
