@@ -10,8 +10,6 @@ class Solution:
         for i in nums[::-1]:
             p.append(k)
             k=k+i
-        print(p)
-        print(l)
         k=k+i
         r=[]
         p=p[::-1]
