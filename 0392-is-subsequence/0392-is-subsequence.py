@@ -18,7 +18,6 @@ class Solution:
                 l=l+1
             elif s[j1]!=t[j]:
                 j=j-1
-        print(v)
         return v==len(s)
                 
                 
