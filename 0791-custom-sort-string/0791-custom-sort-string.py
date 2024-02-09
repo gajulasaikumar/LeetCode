@@ -1,14 +1,16 @@
 class Solution:
     def customSortString(self, order: str, s: str) -> str:
         d={}
-        for i in range(len(order)):
-            d[order[i]]=i
-        s1=(len(s)-1)*["0"]
+        s1=[]
+        t=order
+        for i in s:
+            if i not in t:
+                s1.append(i)
+        print(s1)
         a=[]
-        for j in range(len(s)):
-            if s[j] in d:
-                x=d[s[j]]
-                s1[x]=s[j]*(s.count(s[j]))
-            else:
-                s1.append(s[j])
-        return "".join(s1).replace("0","")
+        l=[]
+        for j in range(len(t)):
+            if t[j] in s:
+                l.append(t[j]*s.count(t[j]))
+        print(l,s1)
+        return "".join(l+s1)
