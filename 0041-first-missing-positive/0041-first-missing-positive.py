@@ -1,7 +1,7 @@
 class Solution:
     def firstMissingPositive(self, nums: List[int]) -> int:
-        s=set(nums)
-        i=1
-        while i in s:
-            i=i+1
-        return i
+        x=set(nums)
+        for i in range(1,len(nums)+2):
+            if i not in x:
+                return i
+        return -1
