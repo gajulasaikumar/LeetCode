@@ -4,13 +4,7 @@ class Solution:
         m=float("-inf")
         for i in nums:
             s=s+i
-            m=max(s,m)
+            m=max(m,s)
             if s<0:
                 s=0
-                
-                
-  
-
-
-              
         return m
