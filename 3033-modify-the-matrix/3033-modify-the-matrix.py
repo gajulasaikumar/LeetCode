@@ -3,11 +3,11 @@ class Solution:
         p=[]
         l=[]
         for i in range(len(matrix[0])):
-            p=[]
+            p=-1
             for j in range(len(matrix)):
-                p.append(matrix[j][i])
+                p=max(p,matrix[j][i])
             for j in range(len(matrix)):
                 if matrix[j][i]==-1:
-                    matrix[j][i]=max(p)
+                    matrix[j][i]=p
         return matrix
                 
