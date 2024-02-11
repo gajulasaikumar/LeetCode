@@ -6,10 +6,8 @@ class Solution:
             p=[]
             for j in range(len(matrix)):
                 p.append(matrix[j][i])
-            l.append(max(p))
-        for i in range(len(matrix[0])):
             for j in range(len(matrix)):
                 if matrix[j][i]==-1:
-                    matrix[j][i]=l[i]
+                    matrix[j][i]=max(p)
         return matrix
                 
