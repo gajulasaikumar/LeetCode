@@ -1,7 +1,5 @@
 class Solution:
     def modifiedMatrix(self, matrix: List[List[int]]) -> List[List[int]]:
-        p=[]
-        l=[]
         for i in range(len(matrix[0])):
             p=-1
             for j in range(len(matrix)):
