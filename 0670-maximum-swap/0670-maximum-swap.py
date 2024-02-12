@@ -8,7 +8,6 @@ class Solution:
                 s[i],s[j]=s[j],s[i]
                 s1="".join(s)
                 m.append(int(s1))
-        print(m)
         return int(max(m))
 
             
