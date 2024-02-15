@@ -7,9 +7,8 @@ class Solution:
         i=0
         while i<len(arr):
             if arr[i]==0:
-                arr[:]=arr[:i+1]+[0]+arr[i+1:]
-
+                arr.insert(i,0)
+                arr.pop()
                 i=i+2
             else:
                 i+=1
-        arr[:]=arr[:n]
