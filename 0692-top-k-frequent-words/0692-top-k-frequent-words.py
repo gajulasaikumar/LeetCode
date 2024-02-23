@@ -7,8 +7,6 @@ class Solution:
             d[i]=1+d.get(i,0)
         for j in d:
             x[d[j]].append(j)
-        print(d)
-        print(x)
         for i in x[::-1]:
             for j in sorted(i):
                 l.append(j)
