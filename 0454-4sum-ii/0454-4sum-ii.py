@@ -8,7 +8,6 @@ class Solution:
                 d[i+j]+=1
         for k in nums3:
             for l in nums4:
-                print(d[k+l])
                 if d[-1*(k+l)]!=0:
                     c+=d[-1*(k+l)]
         return c
