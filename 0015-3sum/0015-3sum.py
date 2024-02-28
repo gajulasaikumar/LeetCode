@@ -15,4 +15,5 @@ class Solution:
                 else:
                     l.add((k,nums[i],nums[j]))
                     j=j-1
+                    i+=1
         return l
