@@ -4,7 +4,7 @@ class Solution:
         for i in s:
             if ord(i)<58 and int(i) not in l:
                 l.append(int(i))
-        f=s=float("-inf")
+        f=s=-1
         for i in l:
             if i>f:
                 s=f
