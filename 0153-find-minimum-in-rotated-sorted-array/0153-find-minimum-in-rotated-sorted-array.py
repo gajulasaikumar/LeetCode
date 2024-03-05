@@ -12,7 +12,6 @@ class Solution:
             else:        
                 x=nums[mid]
                 high=mid-1
-            print(x)
             m=min(m,x)
         return m
                 
