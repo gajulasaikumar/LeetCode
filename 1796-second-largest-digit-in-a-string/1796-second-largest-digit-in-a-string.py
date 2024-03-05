@@ -11,7 +11,7 @@ class Solution:
                 f=i
             elif i>s and i!=f:
                 s=i
-        if s==float("-inf"):
+        if s==-1:
             return -1
         return s
     
