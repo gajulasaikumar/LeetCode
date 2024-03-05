@@ -4,8 +4,18 @@ class Solution:
         for i in s:
             if ord(i)<58 and int(i) not in l:
                 l.append(int(i))
-        l.sort()
-        if len(l)<2:
+        f=s=float("-inf")
+        for i in l:
+            if i>f:
+                s=f
+                f=i
+                
+            elif i>s and i!=f:
+                s=i
+        print(s)
+        if s==float("-inf"):
             return -1
-        return l[-2]
+        return s
+    
+                
         
