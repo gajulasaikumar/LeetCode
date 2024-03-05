@@ -1,9 +1,7 @@
 class Solution:
     def peakIndexInMountainArray(self, arr: List[int]) -> int:
         nums=arr
-        if len(nums)==1:
-            return 0
-        elif nums[0]>nums[1]:
+        if nums[0]>nums[1]:
             return 0
         elif nums[len(nums)-1]>nums[len(nums)-2]:
             return len(nums)-1
