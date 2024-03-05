@@ -7,7 +7,8 @@ class Solution:
         m=nums[0]
         high=len(nums)-1
         while low<=high:
-            if nums[low] < nums[high]: return min(m, nums[low])
+            if nums[low] < nums[high]: 
+                return min(m, nums[low])
             mid=(low+high)//2
             m=min(m,nums[mid])
             if nums[mid]==nums[high]==nums[low]:
