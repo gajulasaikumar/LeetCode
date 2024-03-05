@@ -8,5 +8,4 @@ class Solution:
                 if abs(d[nums[i]][-1]-i)<=k:
                     return True
                 d[nums[i]]+=[i]
- 
         return False
