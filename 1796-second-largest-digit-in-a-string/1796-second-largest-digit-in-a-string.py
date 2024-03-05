@@ -9,10 +9,8 @@ class Solution:
             if i>f:
                 s=f
                 f=i
-                
             elif i>s and i!=f:
                 s=i
-        print(s)
         if s==float("-inf"):
             return -1
         return s
