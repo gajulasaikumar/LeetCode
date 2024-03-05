@@ -16,6 +16,5 @@ class Solution:
                 i=mid+1
             else:                            #right
                 j=mid-1
-        return -1
             
         
