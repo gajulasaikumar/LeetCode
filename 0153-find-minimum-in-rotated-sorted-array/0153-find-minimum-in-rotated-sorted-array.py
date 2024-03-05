@@ -6,7 +6,8 @@ class Solution:
         high=len(nums)-1
         while low<=high:
             mid=(low+high)//2
-            if nums[low]<=nums[mid]:       # left part sorted 
+            
+            if nums[low]<=nums[mid]:   
                 x=nums[low]
                 low=mid+1        
             else:        
