@@ -1,10 +1,11 @@
 class Solution:
     def maxFrequencyElements(self, nums: List[int]) -> int:
         c=0
-        m=-1
-        for i in set(nums):
-            m=max(m,nums.count(i))
-        for i in set(nums):
-            if m==nums.count(i):
+        d={}
+        for i in nums:
+            d[i]=1+d.get(i,0)
+        m=max(d.values())
+        for i in d:
+            if d[i]==m:
                 c=c+m
         return c
