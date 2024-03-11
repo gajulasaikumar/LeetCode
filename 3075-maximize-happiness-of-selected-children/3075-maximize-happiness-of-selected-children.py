@@ -7,7 +7,6 @@ class Solution:
         for i in range(k):
             if happiness[i]<=0:
                 x=x+0
-                c=0
             else:
                 x=x+happiness[i]-c
             c=c+1
