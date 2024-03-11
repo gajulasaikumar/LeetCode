@@ -18,6 +18,5 @@ class Solution:
                 return (s+v+str(c))
             return s+v
         x=solve(chars)
-        print(x)
         chars[:]=list(x)
         return len(chars)
