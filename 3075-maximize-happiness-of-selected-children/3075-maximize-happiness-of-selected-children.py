@@ -8,7 +8,6 @@ class Solution:
             if happiness[i]<=0:
                 x=x+0
             else:
-                x=x+happiness[i]-c
-            c=c+1
+                x=x+happiness[i]-i
             m=max(x,m)
         return m
