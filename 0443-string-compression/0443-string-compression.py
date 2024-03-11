@@ -19,4 +19,4 @@ class Solution:
             return s+v
         x=solve(chars)
         chars[:]=list(x)
-        return len(list(x))
+        return len(chars)
