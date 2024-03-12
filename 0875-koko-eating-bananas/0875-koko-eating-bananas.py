@@ -16,5 +16,4 @@ class Solution:
                 j=mid-1
             elif solve(mid,piles)>h:
                 i=mid+1
-            print(solve(mid,piles),mid)
         return m
