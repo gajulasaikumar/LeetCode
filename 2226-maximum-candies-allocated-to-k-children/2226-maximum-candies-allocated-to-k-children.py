@@ -7,7 +7,7 @@ class Solution:
                 s=s+(i//n)
             return s
         i=1
-        m=float("inf")
+        m=float("-inf")
         j=max(candies)
         if sum(candies)<k:
             return 0
@@ -17,6 +17,6 @@ class Solution:
                 j=mid-1
             elif solve(mid,candies)>=k:
                 i=mid+1
-                m=mid
+                m=max(mid,m)
 
         return m
