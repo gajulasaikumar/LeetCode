@@ -6,11 +6,11 @@
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
-        s=set()
-        t=head
-        while t:
-            if t in s:
+        s=head
+        f=head
+        while f!=None and f.next!=None:
+            s=s.next
+            f=f.next.next
+            if s==f:
                 return True
-            s.add(t)
-            t=t.next
         return False
