@@ -11,12 +11,10 @@ class Solution:
             while t:
                 l.append(str(t.val))
                 t=t.next
-                
             return l
         x=solve(l1)[::-1]
         y=solve(l2)[::-1]
         p=[]
-        print(x,y)
         x=int("".join(x))
         y=int("".join(y))
         for i in str(x+y)[::-1]:
